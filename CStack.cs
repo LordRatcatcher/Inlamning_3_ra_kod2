@@ -211,7 +211,7 @@ namespace Inlamning_3_ra_kod
          *   retrieved from the GUI buttons
          * RETURNS: --
          * FEATURES: the stack is rolled up, X is preserved in Y that is preserved in
-         *   Z that is preserved in T, T is erased
+         *   Z that is preserved in T, T is erased d
          */
         public void Nilop(string op)
         {
