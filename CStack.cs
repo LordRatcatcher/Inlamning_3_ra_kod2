@@ -21,6 +21,10 @@ namespace Inlamning_3_ra_kod
     {
         public double X, Y, Z, T;
         public string entry;
+        public string A, B, C, D, E, F, G, H;
+        string[] middle = { "A", "B", "C", "D", "E", "F", "G", "H" };
+        public string tempString;
+                
         /* CONSTRUCTOR: CStack
          * PURPOSE: create a new stack and init X, Y, Z, T and the text entry
          * PARAMETERS: --
@@ -247,9 +251,9 @@ namespace Inlamning_3_ra_kod
          * RETURNS: --
          * FEATURES: NOT YET IMPLEMENTED
          */
-        public void SetAddress(string name)
+        public void SetAddress(string tempHelper)
         {
-
+            tempHelper = tempString;
         }
         /* METHOD: SetVar
          * PURPOSE: 
@@ -259,7 +263,7 @@ namespace Inlamning_3_ra_kod
          */
         public void SetVar()
         {
-
+            SetAddress(entry);
         }
         /* METHOD: GetVar
          * PURPOSE: 
