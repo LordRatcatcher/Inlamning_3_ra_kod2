@@ -253,7 +253,7 @@ namespace Inlamning_3_ra_kod
          */
         public void SetAddress(string tempHelper)
         {
-            tempHelper = tempString;
+            tempString = tempHelper;
         }
         /* METHOD: SetVar
          * PURPOSE: 
@@ -263,7 +263,7 @@ namespace Inlamning_3_ra_kod
          */
         public void SetVar()
         {
-            SetAddress(entry);
+            SetAddress(Convert.ToString(X));
         }
         /* METHOD: GetVar
          * PURPOSE: 
