@@ -1,4 +1,4 @@
-﻿    using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,16 +20,7 @@ namespace Inlamning_3_ra_kod
     public class CStack
     {
         public double X, Y, Z, T;
-        public string A, B, C, D, E, F, G, H;
         public string entry;
-        public string tempString;
-
-        string[] middle = { "A", "B", "C", "D", "E", "F", "G", "H" };                       
-        
-        
-        
-
-
         /* CONSTRUCTOR: CStack
          * PURPOSE: create a new stack and init X, Y, Z, T and the text entry
          * PARAMETERS: --
@@ -37,10 +28,7 @@ namespace Inlamning_3_ra_kod
         public CStack()
         {
             X = Y = Z = T = 0;
-            tempString = "";
-            A = B = C = D = E = F = G = H = "";
             entry = "";
-            
         }
         /* METHOD: Exit
          * PURPOSE: called on exit, prepared for saving
@@ -68,10 +56,7 @@ namespace Inlamning_3_ra_kod
          */
         public string VarString()
         {
-            return "";
-            
-            
-
+            return "insertme";
         }
         /* METHOD: SetX
          * PURPOSE: set X with overwrite
@@ -145,10 +130,8 @@ namespace Inlamning_3_ra_kod
         {
             if (entry != "")
             {
-                RollSetX(double.Parse(entry));                
+                RollSetX(double.Parse(entry));
                 entry = "";
-                
-                
             }
         }
         /* METHOD: Drop
@@ -259,14 +242,14 @@ namespace Inlamning_3_ra_kod
             T = Z; Z = Y; Y = X; X = newX;
         }
         /* METHOD: SetAddress
-         * PURPOSE: creates a string that is set to equal a tempstring to store the variable
-         * PARAMETERS: string groob, string tempString
+         * PURPOSE: 
+         * PARAMETERS: string name - variable name
          * RETURNS: --
          * FEATURES: NOT YET IMPLEMENTED
          */
-        public void SetAddress( string groob)
+        public void SetAddress(string name)
         {
-            tempString = groob;                      
+
         }
         /* METHOD: SetVar
          * PURPOSE: 
@@ -275,8 +258,8 @@ namespace Inlamning_3_ra_kod
          * FEATURES: NOT YET IMPLEMENTED
          */
         public void SetVar()
-        {           
-                SetAddress(entry);                         
+        {
+
         }
         /* METHOD: GetVar
          * PURPOSE: 
